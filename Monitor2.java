@@ -38,13 +38,14 @@ public class Monitor2 {
 			}
 		}
 
-		LinkedList<HashMap<String, Subsequence>> subsequences = new LinkedList<>();
 		lock.lock();
-		try {
-			if(size() < 2) {
-				return null;
-			}
 
+		if(size() < 2) {
+			return null;
+		}
+
+		LinkedList<HashMap<String, Subsequence>> subsequences = new LinkedList<>();
+		try {
 			subsequences.push(pop());
 			subsequences.push(pop());
 		} finally {

@@ -96,6 +96,7 @@ public class Main {
 			for(Subsequence _sequenceB : healthy.values()) {
 				if(sequenceA.substring.equals(_sequenceB.substring)) {
 					sequenceB = _sequenceB;
+					break;
 				}
 			}
 

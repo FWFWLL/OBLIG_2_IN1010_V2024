@@ -28,7 +28,7 @@ public class Monitor2 {
 				System.out.println("Thread " + Thread.currentThread().threadId() + " Waiting...");
 				Thread.sleep(1000);
 
-				if(size() > 1) {
+				if(size() >= 1) {
 					break;
 				}
 
